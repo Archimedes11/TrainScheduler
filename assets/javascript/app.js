@@ -3,14 +3,14 @@ $(document).ready(function(){
     //Initialize Firebase
   
         var firebaseConfig = {
-          apiKey: "AIzaSyDUTIJHjoKkiwWYt2A6Tiz6AFwNx9ze8DM",
-          authDomain: "anewproject-1b54d.firebaseapp.com",
-          databaseURL: "https://anewproject-1b54d.firebaseio.com",
-          projectId: "anewproject-1b54d",
-          storageBucket: "anewproject-1b54d.appspot.com",
-          messagingSenderId: "961920171791",
-          appId: "1:961920171791:web:fe70c929786dcebe7d087a",
-          measurementId: "G-MCGNF1ZJYN"
+            apiKey: "AIzaSyD8Sn_Pf09Hbu2N-G5Bz6LahmMht51fLFo",
+            authDomain: "train-scheduler-3f0f6.firebaseapp.com",
+            databaseURL: "https://train-scheduler-3f0f6.firebaseio.com",
+            projectId: "train-scheduler-3f0f6",
+            storageBucket: "train-scheduler-3f0f6.appspot.com",
+            messagingSenderId: "773453488796",
+            appId: "1:773453488796:web:0dda6439bde6d401214359",
+            measurementId: "G-H1V2DK38HG"
         };
         // Initialize Firebase
         firebase.initializeApp(firebaseConfig);
