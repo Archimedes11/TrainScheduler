@@ -1,0 +1,82 @@
+<!Doctype html>
+<html lang = "eng-us">
+    <head>
+        <meta charset= "uft-8">
+        <title>Train Scheduler</title>
+        <link rel = "stylesheet" href = "assets/css/style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/bc3603c350.js" crossorigin="anonymous"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+        <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    </head>
+    <body>
+        <div class = "container">
+            <div class = "jumbotron">
+                <button id = "portfolio"><a href="https://katherinersl.github.io/Basic-Portfolio/">Portfolio</a></button>
+                <h1 class = "text-center"><strong>Train Scheduler</strong></h1>
+                <h5 class = "text-center"><strong>Your Adventure Begins Here!</strong></h5>
+            </div>
+            <div class = "row">
+                <div class = "col-sm-12">
+                    <div class = "card">
+                        <div class = "panel panel-default">
+                            <h5><i class="far fa-list-alt"></i>Current Train Scheduler</h5>
+                        </div>
+                        <table class = "table" id = "trainTable">
+                            <thead class = "thead-default">
+                                <tr>
+                                    <th scope = "col">#</th>
+                                    <th scope = "col">Train Name</th>
+                                    <th scope = "col">Destination</th>
+                                    <th scope = "col">First Train Arrival Time</th>
+                                    <th scope = "col">Frequency (min)</th>
+                                    <th scope = "col">Next Train Arrival Time</th>
+                                    <th scope = "col">Arriving In (min)</th>
+                                </tr>
+                            </thead>
+                            <tbody class = "tableBody">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class = "row">
+                <div class = "col-sm-12">
+                    <div class = "card">
+                        <div class = "card-heading">
+                            <h5><i class="fas fa-train"></i>Add Train</h5>
+                        </div>
+                        <div class = "card-body">
+                            <form role = "form" id = "form-input">
+                                <div class = "form-group row">
+                                    <label for = "train-input">Train Name:</label>
+                                    <input class = "form-control" id = "train-input" type = "text">
+                                </div>
+                                <div class = "form-group row">
+                                    <label for = "destination-input">Destination:</label>
+                                    <input class = "form-control" id = "destination-input" type = "text">
+                                </div>
+                                <div class = "form-group row">
+                                    <label for = "time-input">First Train Arrival Time (HH:mm  military time):</label>
+                                    <input class = "form-control" id = "time-input" type = "text">
+                                </div>
+                                <div class = "form-group row">
+                                    <label for = "frequency-input">Frequency (min)</label>
+                                    <input class = "form-control" id = "frequency-input" type = "text">
+                                </div>
+                                <button type = "submit" class = "btn btn-large" id = "add-train">Add The Train</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+        <script src = "assets/javascript/app.js"></script>
+    </body>
+</html>
